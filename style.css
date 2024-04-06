@@ -601,7 +601,7 @@ button.learn-more:hover .button-text {
     color: #fff; /* White text color */
 }
 
-download-btn {
+.download-btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #0d0a5e; 
