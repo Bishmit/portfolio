@@ -600,3 +600,17 @@ button.learn-more:hover .circle .icon.arrow {
 button.learn-more:hover .button-text {
     color: #fff; /* White text color */
 }
+
+download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d0a5e; 
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #261452; 
+}
