@@ -135,6 +135,20 @@ header nav:hover > a:not(:hover) {
     font-size: 40px;
 }
 
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0d0a5e; 
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #261452; 
+}
+
 .skills {
     padding: 50px 0;
     background-color: #5247B9; /* Set background color here */
@@ -599,18 +613,4 @@ button.learn-more:hover .circle .icon.arrow {
 
 button.learn-more:hover .button-text {
     color: #fff; /* White text color */
-}
-
-.download-btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #0d0a5e; 
-    color: #ffffff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.download-btn:hover {
-    background-color: #261452; 
 }
