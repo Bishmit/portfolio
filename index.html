@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 <body>
     <header>
@@ -51,109 +52,76 @@
       </a>
       </section>
 
-    <section class="skills" id="skills">
+      <section class="skills" id="skills">
         <div class="heading">
             <h1>Skills</h1>
         </div>
-        <!-- Content -->
+    
         <div class="skills-content">
-            <div class="skills-text">
-            </div>
             <div class="skills-bars">
-                <div class="skills-box">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML</h3>
-                    <span>33%</span>
-                    <div class="percent-bar html-bar"></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fab fa-css3"></i>
-                    <h3>CSS</h3>
-                    <span>24%</span>
-                    <div class="percent-bar css-bar"></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fab fa-js"></i>
-                    <h3>JavaScript</h3>
-                    <span>15%</span>
-                    <div class="percent-bar js-bar"></div>
-                </div>
                 <div class="skills-box">
                     <i class="fab fa-c"></i>
                     <h3>C/C++</h3>
                     <span>85%</span>
-                    <div class="percent-bar c-bar"></div>
+                    <div class="percent-bar"><div class="filled c-bar"></div></div>
                 </div>
                 <div class="skills-box">
-                    <i class="fas fa-palette"></i>
-                    <h3>UI/UX</h3>
-                    <span>50%</span>
-                    <div class="percent-bar ux-bar"></div>
+                    <i class="fab fa-js"></i>
+                    <h3>Web Dev</h3>
+                    <span>45%</span>
+                    <div class="percent-bar"><div class="filled js-bar"></div></div>
                 </div>
-            </div>
-            <div class="skills-img">
-                <img src="skills.jpg" alt="">
+                <div class="skills-box">
+                    <i class="fas fa-desktop"></i>
+                    <h3>SFML / SDL </h3>
+                    <span>60%</span>
+                    <div class="percent-bar"><div class="filled ux-bar"></div></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-windows"></i>
+                    <h3>.NET</h3>
+                    <span>50%</span>
+                    <div class="percent-bar"><div class="filled dotnet-bar"></div></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fab fa-linux"></i>
+                    <h3>Linux / Bash</h3>
+                    <span>70%</span>
+                    <div class="percent-bar"><div class="filled linux-bar"></div></div>
+                </div>
+                <div class="skills-box">
+                    <i class="fas fa-keyboard"></i>
+                    <h3>Vim / Neovim</h3>
+                    <span>64%</span>
+                    <div class="percent-bar"><div class="filled vim-bar"></div></div>
+                </div>
             </div>
         </div>
     </section>
-    <script src="script.js"></script>
+    
 
     <section id="projects">
-        <div class="heading-project">
-            <h1>Projects</h1>
-        </div>
-        <div class="projects container">
-          <div class="projects-header">
-          </div>
-          <div class="all-projects">
-            <div class="project-item">
-              <div class="project-info">
-                <h2>College Management System</h2>
-                <p>This is my school assignment frontend project where me and my team have created school managment system. Even i don't know enough web stuffs but it was fun project to do. We use vanilla js for this.</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-1.png" alt="img">
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <h2>Space Shooter Game</h2>
-                <p>This is simple space shooter game that i make in C++ using SFML library.</p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-2.png" alt="img">
-              </div>
-            </div>
-            <div class="project-item">
-              <div class="project-info">
-                <h2>Flappy Bird Clone</h2>
-                <p>
-                    This is simple flappy bird which i have made in c++ again with sfml library. 
-                </p>
-              </div>
-              <div class="project-img">
-                <img src="./img/img-3.png" alt="img">
-              </div>
-            </div>
-            
-            <div class="project-item">
-              <div class="project-info-more">
-                <div id="container">
-                  <a href="https://github.com/Bishmit?tab=repositories" class="button-link">
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
-                    </span>
-                    <span class="button-text">View More</span>
-                  </button>
-                   </a>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <div class="heading-project">
+        <h1>Projects</h1>
+      </div>
+      <div class="projects-grid">
+      </div>
+      <div id="container">
+        <a href="https://github.com/Bishmit?tab=repositories" target="_blank" rel="noopener noreferrer" class="button-link">
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+            <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">View More</span>
+        </button>
+         </a>
+      </div>
+    </section>
+    
+   
+    
+    <script src="js/script.js"></script>
+    <script src="js/project.js"></script>
 
       <section id ="Contact">
         <div class="contact-img">
@@ -161,7 +129,7 @@
         </div>
         <div class="contact-form">
             <h1>Contact <span>Me</span></h1>
-            <p>I am available for working on C++ projects, game development ideas. You can send your message directly from below to my gmail.</p>
+            <p>I am available for working on C++ projects, game/simulation development ideas. You can send your message directly from below to my gmail.</p>
             <form action="https://api.web3forms.com/submit" method="POST">
                 <input type="hidden" name="access_key" value="1c3545c2-07b5-4966-86b5-7fb2543e6bb4">
                 <input type="text" name="name" placeholder="Your Name" required>

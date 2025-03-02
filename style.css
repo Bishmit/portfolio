@@ -36,10 +36,10 @@ header nav a {
     color: white;
 }
 header nav a.active {
-    background: #5247B9;
+    background-color: #2a2a7a;
 }
 header nav a:hover {
-    background: #5247B9;
+    background-color: #2a2a7a;
 }
 header nav:hover > a:not(:hover) {
     background: none;
@@ -149,192 +149,192 @@ header nav:hover > a:not(:hover) {
     background-color: #261452; 
 }
 
+/* General Styles */
 .skills {
+    background-color: #2a2a7a;/* Blue background */
+    color: white;
     padding: 50px 0;
-    background-color: #5247B9; /* Set background color here */
     text-align: center;
-    color: #fff; /* Set text color to white */
 }
 
 .heading h1 {
-    font-size: 36px;
-    color: #fff; /* Set heading color to white */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
+/* Skills Container */
 .skills-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
 }
 
-.skills-text {
-    flex: 0 0 100%; /* Set to take full width */
-    padding: 20px;
-    text-align: center; /* Center align text */
-}
-
-.skills-text h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    color: #fff; /* Set text color to white */
-}
-
-.skills-text p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #fff; /* Set text color to white */
-}
-
+/* Skills Grid */
 .skills-bars {
-    flex: 0 0 100%; /* Set to take full width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
 }
 
+/* Skill Box */
 .skills-box {
-    width: 150px;
-    margin: 20px;
+    background-color:#433e94;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skills-box:hover {
+    transform: scale(1.05);
 }
 
 .skills-box i {
-    font-size: 48px;
-    color: #fff; /* Set icon color to white */
+    font-size: 40px;
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .skills-box h3 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    color: #fff; /* Set text color to white */
+    margin: 5px 0;
+    font-size: 1.2rem;
 }
 
 .skills-box span {
-    font-size: 16px;
-    color: #fff; /* Set text color to white */
+    font-weight: bold;
+    color: rgb(179, 188, 206);
 }
 
+/* Progress Bar */
 .percent-bar {
-    height: 10px;
-    background-color: #ddd;
-    margin-top: 5px;
-}
-
-.html-bar {
-    width: 33%;
-    background-color: #f16529;
-}
-
-.css-bar {
-    width: 24%;
-    background-color: #2965f1;
-}
-
-.js-bar {
-    width: 15%;
-    background-color: #f0db4f;
-}
-
-.ux-bar {
-    width: 70%;
-    background-color: #a367dc;
-}
-
-.skills-img img {
     width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-}
-
-.heading-project {
-    padding: 50px 0;
-    background-color: #5247B9; /* Set background color here */
-    text-align: center;
-    font-size: larger;
-    color: #fff; /* Set text color to white */
-}
-#projects .all-projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #5247B9; /* Change background color to dark purple */
-}
-
-#projects .project-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 20px auto;
-    overflow: hidden;
-    border-radius: 10px;
-}
-
-#projects .project-info {
-    padding: 30px;
-    flex-basis: 50%;
-    height: 100%;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: column;
-    background-image: linear-gradient(60deg, #5247B9 0%, #845EC2 100%);
-    color: white;
-}
-
-#projects .project-info p {
-    font-size: 1.5em;
-    font-weight: 50;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height:40px;
-}
-
-#projects .project-info-more p {
-    font-size: 1.2em;
-    font-weight: 30;
-    font-family: cursive; 
-    line-height:40px;
-    color: white;
-}
-
-#projects .project-info p {
-    color: white;
-}
-
-#projects .project-img {
-    flex-basis: 50%;
-    height: 300px;
-    overflow: hidden;
+    background: #004080;
+    height: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
     position: relative;
+    overflow: hidden;
 }
 
-#projects .project-img:after {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
+.filled {
     height: 100%;
-    width: 100%;
-    background-image: linear-gradient(60deg, #5247B9 0%, #845EC2 100%);
-    opacity: 0.7;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #ffffff, #ffffff);
 }
 
-#projects .project-img img {
-    transition: 0.3s ease transform;
+/* Individual Skill Progress */
+.c-bar { width: 85%; }
+.js-bar { width: 45%; }
+.ux-bar { width: 60%; }
+.dotnet-bar { width: 50%; }
+.linux-bar { width: 70%; }
+.vim-bar { width: 64%; }
+
+/* Responsive Grid */
+@media (max-width: 768px) {
+    .skills-bars {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-#projects .project-item:hover .project-img img {
-    transform: scale(1.1);
+@media (max-width: 480px) {
+    .skills-bars {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
+
+
+/* General Styles */
+#projects {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2a2a7a; /* Purple background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+  }
+  
+  .heading-project h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #fff; /* White text for better contrast */
+  }
+  
+  /* Projects Grid */
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #4a54ad; /* White background for the grid */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(231, 84, 84, 0.1); /* Add shadow for depth */
+    padding: 20px; /* Add padding inside the grid */
+    margin-bottom: 20px; /* Space at the bottom */
+  }
+  
+  /* Project Item */
+  .project-item {
+    background: #433e94;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+  
+  .project-info p {
+    font-size: 1rem;
+    color: #beb9cf;
+    line-height: 1.5;
+  }
+  
+ /* Project Image Container */
+.project-img {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    overflow: hidden; /* Prevent image overflow */
+    height: 200px; /* Set a fixed height for the image container */
+  }
+  
+  /* Image Styling */
+  .project-img img {
+    width: 100%; /* Make the image fill the container width */
+    height: 100%; /* Make the image fill the container height */
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+    border-radius: 10px; /* Optional: Add rounded corners to the image */
+  }
+  
 
 #Contact{
     padding: 40px 15%;
-    background:#574db8;
+    background-color: #2a2a7a;
     height: 100%;
     width: 100%;
     min-height: 100vh;
@@ -513,22 +513,14 @@ footer{
     font-weight: 400;
     margin: 0px 5px;
 }
-@media (max-width: 700px){
-    .footerNav ul{
-        flex-direction: column;
-    } 
-    .footerNav ul li{
-        width:100%;
-        text-align: center;
-        margin: 10px;
-    }
-    .socialIcons a{
-        padding: 8px;
-        margin: 4px;
-    }
-}
 
-button {
+   #container{
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+   }
+
+   button {
     position: relative;
     display: inline-block;
     cursor: pointer;
@@ -614,3 +606,59 @@ button.learn-more:hover .circle .icon.arrow {
 button.learn-more:hover .button-text {
     color: #fff; /* White text color */
 }
+
+@media (max-width: 700px){
+    .footerNav ul{
+        flex-direction: column;
+    } 
+    .footerNav ul li{
+        width:100%;
+        text-align: center;
+        margin: 10px;
+    }
+    .socialIcons a{
+        padding: 8px;
+        margin: 4px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .heading-project h1 {
+      font-size: 2rem; /* Smaller font size for mobile */
+    }
+  
+    .projects-grid {
+      grid-template-columns: 1fr; /* Single column for mobile */
+      gap: 15px; /* Smaller gap for mobile */
+      padding: 0 10px; /* Smaller padding for mobile */
+    }
+  
+    .project-item {
+      margin-bottom: 15px; /* Add space between items */
+    }
+  
+    .project-info h2 {
+      font-size: 1.25rem; /* Smaller heading for mobile */
+    }
+  
+    .project-info p {
+      font-size: 0.9rem; /* Smaller text for mobile */
+    }
+  
+    .project-img {
+      height: 150px; /* Smaller image container for mobile */
+    }
+  }
+
+/* Project Link Styling */
+.project-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color */
+    display: block; /* Make the link fill the entire project item */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  .project-link:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+  }
