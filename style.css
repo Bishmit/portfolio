@@ -125,15 +125,19 @@ header nav:hover > a:not(:hover) {
 
 .about {
     padding: 50px;
-    background: #3B3291;
+    background-color: #2a2a7a;
     color: white;
     position: relative;
     z-index: 100;
-    font-size: larger;
 }
 .about h1 {
     font-size: 40px;
 }
+
+.about p {
+    font-size: 1.2em; 
+}
+
 
 .download-btn {
     display: inline-block;
@@ -389,23 +393,24 @@ span{
 
 .contact-form form .btn{
     display: inline-block;
-    background: #291c57; 
+    background-color: transparent;
+    border: 2px solid #858d96; 
     font-size: 1.1rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 600;
-    border: 2px solid transparent; 
     border-radius: 10px; 
     width: 220px; 
     transition: ease .20s;
     cursor: pointer; 
+    color: #a29eb1; 
 }
 
 .contact-form form .btn:hover{
-    border: 2px solid #291c57; 
+    border: 2px solid #c0bec9; 
     background:transparent; 
     transform: scale(1.01); 
-    color: #291c57; 
+    color: whitesmoke;
 }
 
 @media (max-width: 1024px) {
@@ -498,11 +503,7 @@ footer{
 .footerNav ul li a:hover{
     opacity: 1;
 }
-.footerBottom{
-    background-color:#291c57;
-    padding: 20px;
-    text-align: center;
-}
+
 .footerBottom p{
     color: white;
 }
@@ -661,4 +662,14 @@ button.learn-more:hover .button-text {
   
   .project-link:hover {
     text-decoration: none; /* Ensure no underline on hover */
+  }
+
+  .footerContainer{
+    background-color: #242466;/* Blue background */
+  }
+
+  .footerBottom{
+    padding: 20px;
+    text-align: center;
+    background-color: #242466;/* Blue background */
   }
