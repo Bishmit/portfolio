@@ -4,7 +4,7 @@ const projects = [
       title: "Rigid Body Physics Simulation",
       description:
         "Rigid Body Simulation made in SFML/C++ from scratch which detects collisions and resolve it.",
-      image: "../projectss/rigidbody.png",
+      image: "./projectss/rigidbody.png",
       githubLink: "https://github.com/Bishmit/RigidBodyPhysicsEngine",
     },
     {
@@ -25,7 +25,7 @@ const projects = [
       title: "Terminal like Portfolio",
       description:
         "Simple Terminal based Portfolio made for linux user or CLI lover with many features of terminal.",
-      image: "projectss/terminal.png",
+      image: "./projectss/terminal.png",
       githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
     },
     {
