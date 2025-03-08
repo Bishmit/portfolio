@@ -4,42 +4,42 @@ const projects = [
       title: "Rigid Body Physics Simulation",
       description:
         "Rigid Body Simulation made in SFML/C++ from scratch which detects collisions and resolve it.",
-      image: "../img/rigidbody.png",
+      image: "../projectss/rigidbody.png",
       githubLink: "https://github.com/Bishmit/RigidBodyPhysicsEngine",
     },
     {
       title: "Custom Graph Traversal",
       description:
         "This is Graph traversal for DFS, BFS with visually appealing animation of traversal made in C++/SFML.",
-      image: "../img/tree.png",
+      image: "./projectss/tree.png",
       githubLink: "https://github.com/Bishmit/CustomTreeTraversal",
     },
     {
       title: "Realtime Path Finding Algorithm",
       description:
         "A* Algorithm visualization in C++/SFML which find shortest path from one point to another avoiding obstacles.",
-        image: "../img/astar.png",
+        image: "./projectss/astar.png",
         githubLink: "https://github.com/Bishmit/PathFinding-Visualization-using-Astar-algorithm",
     },
     {
       title: "Terminal like Portfolio",
       description:
         "Simple Terminal based Portfolio made for linux user or CLI lover with many features of terminal.",
-      image: "../img/terminal.png",
+      image: "projectss/terminal.png",
       githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
     },
     {
       title: "Space Shooter",
       description:
         "This is a simple space shooter game that I made in C++/SFML library while dodging bullets and enemy.",
-      image: "../img/plane.png",
+      image: "./projectss/plane.png",
       githubLink: "https://github.com/Bishmit/Plane",
     },
     {
       title: "Flappy Bird Clone",
       description:
         "This is simple Flappy Bird clone that I made in C++ again with the SFML library.",
-      image: "../img/flappybird.png",
+      image: "./projectss/flappybird.png",
       githubLink: "https://github.com/Bishmit/flappybird",
     },
 
