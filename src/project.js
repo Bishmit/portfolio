@@ -4,7 +4,7 @@ const projects = [
       title: "Rigid Body Physics Simulation",
       description:
         "Rigid Body Simulation made in SFML/C++ from scratch which detects collisions and resolve it.",
-      image: "./projectss/rigidbody.png",
+        image: "./projectss/rigidbody.png",
       githubLink: "https://github.com/Bishmit/RigidBodyPhysicsEngine",
     },
     {
