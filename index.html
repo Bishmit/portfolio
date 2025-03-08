@@ -39,64 +39,36 @@
     <section class="about" id="about">
         <h1>About</h1>
         <br>
-        <p>Hello there. I am Bishmit Regmi C++ coder/learner who loves C++ and low level development.</p>
+        <p>Hello, I’m Bishmit Regmi, a passionate C++ developer with a strong focus on low-level programming and system development.</p>
         <br>
-        <p>I am passionate about coding and learning how things work. I am pursuing my bachelor degree in computer science and information technology in Lumbini ICT Campus.</p>
+        <p>I am currently pursuing my Bachelor's degree in Computer Science and Information Technology at Lumbini ICT Campus. My expertise lies in C++ programming, and I have a deep interest in game development, simulations, and artificial intelligence.</p>
         <br>
-        <p> I have deep interest in learning game programming, making simulation and also towards AI. I have quite good experince with C++ and want to be good in this field.</p>
+        <p>With hands-on experience in developing simulations and exploring advanced programming concepts, I am constantly looking for opportunities to apply my skills to challenging and innovative projects.</p>
         <br>
-        <p>In my free time i enjoy coding like making simulation, simple game, competitive programming or just coding anything that is interesting and also i watch anime.</p>
+        <p>In my free time, I enjoy working on personal projects, competitive programming, and researching new technologies to enhance my problem-solving abilities.</p>
         <br>
-        <a href="Resume.pdf" download='Resume' class="download-btn">Download CV
-          <i class="fa fa-download"></i>
-      </a>
-      </section>
-
-      <section class="skills" id="skills">
-        <div class="heading">
-            <h1>Skills</h1>
-        </div>
+        <a href="Resume.pdf" download="Resume" class="download-btn">Download CV
+            <i class="fa fa-download"></i>
+        </a>
+    </section>
     
-        <div class="skills-content">
-            <div class="skills-bars">
-                <div class="skills-box">
-                    <i class="fab fa-c"></i>
-                    <h3>C/C++</h3>
-                    <span>85%</span>
-                    <div class="percent-bar"><div class="filled c-bar"></div></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fab fa-js"></i>
-                    <h3>Web Dev</h3>
-                    <span>45%</span>
-                    <div class="percent-bar"><div class="filled js-bar"></div></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fas fa-desktop"></i>
-                    <h3>SFML / SDL </h3>
-                    <span>60%</span>
-                    <div class="percent-bar"><div class="filled ux-bar"></div></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fab fa-windows"></i>
-                    <h3>.NET</h3>
-                    <span>50%</span>
-                    <div class="percent-bar"><div class="filled dotnet-bar"></div></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fab fa-linux"></i>
-                    <h3>Linux / Bash</h3>
-                    <span>70%</span>
-                    <div class="percent-bar"><div class="filled linux-bar"></div></div>
-                </div>
-                <div class="skills-box">
-                    <i class="fas fa-keyboard"></i>
-                    <h3>Vim / Neovim</h3>
-                    <span>64%</span>
-                    <div class="percent-bar"><div class="filled vim-bar"></div></div>
-                </div>
-            </div>
+
+    <div class="heading">
+        <h1>Skills</h1>
+    </div>
+
+    <section class="skills" id="skills">
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'languages')">Languages</button>
+            <button class="tab-btn" onclick="openTab(event, 'tools')">Tools</button>
+            <button class="tab-btn" onclick="openTab(event, 'frameworks')">Frameworks</button>
+            <button class="tab-btn" onclick="openTab(event, 'game-dev')">Game Dev</button>
         </div>
+
+        <!-- Tab Content -->
+        <div id="tab-content" class="tab-content active"></div>
+
     </section>
     
 
@@ -122,6 +94,7 @@
     
     <script src="js/script.js"></script>
     <script src="js/project.js"></script>
+    <script src="js/skills.js"></script>
 
       <section id ="Contact">
         <div class="contact-img">
@@ -143,12 +116,13 @@
       <footer>
         <div class="footerContainer">
             <div class="socialIcons">
-                <a href="https://www.facebook.com/chris.regmi.7/"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/bishmitregmi/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/BishmitRegmi"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/bishmit-regmi-20852b260/"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Bishmit"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/chris.regmi.7/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/bishmitregmi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/BishmitRegmi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/bishmit-regmi-20852b260/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Bishmit" target="_blank"><i class="fa-brands fa-github"></i></a>
             </div>
+            
             <div class="footerNav">
                 <ul><li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -166,3 +140,4 @@
 
 </body>
 </html>
+

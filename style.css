@@ -153,105 +153,167 @@ header nav:hover > a:not(:hover) {
     background-color: #261452; 
 }
 
-/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2a2a7a;
+}
+
 .skills {
-    background-color: #2a2a7a;/* Blue background */
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2f2f80;
     color: white;
-    padding: 50px 0;
-    text-align: center;
+    border-radius: 10px;
 }
 
 .heading h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
-}
-
-/* Skills Container */
-.skills-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Skills Grid */
-.skills-bars {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    width: 90%;
-}
-
-/* Skill Box */
-.skills-box {
-    background-color:#433e94;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
-    transition: transform 0.3s ease-in-out;
 }
 
-.skills-box:hover {
-    transform: scale(1.05);
+
+/* Tabs */
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
-.skills-box i {
-    font-size: 40px;
-    color: #ffffff;
-    margin-bottom: 10px;
+.tab-btn {
+    flex: 1;
+    max-width: 120px;
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    background-color: #293ba1;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
 }
 
-.skills-box h3 {
-    margin: 5px 0;
-    font-size: 1.2rem;
+
+.tab-btn:hover {
+    background-color: #374388;
 }
 
-.skills-box span {
-    font-weight: bold;
-    color: rgb(179, 188, 206);
+/* Skills List */
+.tab-content {
+    display: none;
+   
 }
 
+.tab-content.active {
+    display: block;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+    font-size: 15px;
+    font-family: serif;
+}
+
+.skill-name span {
+    color: white;
+}
+
+
+.skill-name i {
+    font-size: 20px;
+    color: white;
+}
+
+.heading h1{
+    color: white;
+}
 /* Progress Bar */
-.percent-bar {
+.progress-bar {
     width: 100%;
-    background: #004080;
-    height: 8px;
-    border-radius: 4px;
-    margin-top: 10px;
-    position: relative;
+    height: 10px;
+    background-color: #a7aec4;
+    border-radius: 20px;
     overflow: hidden;
+    position: relative;
 }
 
-.filled {
+.progress {
     height: 100%;
-    border-radius: 4px;
-    background: linear-gradient(90deg, #ffffff, #ffffff);
+    background-color: #3350b1;
+    border-radius: 10px;
+    transition: width 0.7s ease;
 }
 
-/* Individual Skill Progress */
-.c-bar { width: 85%; }
-.js-bar { width: 45%; }
-.ux-bar { width: 60%; }
-.dotnet-bar { width: 50%; }
-.linux-bar { width: 70%; }
-.vim-bar { width: 64%; }
+.progress::after {
+    content: attr(data-progress);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(15, 7, 85); 
+    font-size: 10px;
+    font-weight: bold;
+}
 
-/* Responsive Grid */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .skills-bars {
-        grid-template-columns: repeat(2, 1fr);
+    .skills {
+        max-width: 90%;
+    }
+
+    .tabs {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .tab-btn {
+        flex: none;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .skill-name {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 16px;
     }
 }
 
 @media (max-width: 480px) {
-    .skills-bars {
-        grid-template-columns: repeat(1, 1fr);
+    .tabs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab-btn {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .skill-name {
+        font-size: 14px;
+    }
+
+    .progress-bar {
+        height: 14px;
     }
 }
-
 
 /* General Styles */
 #projects {
