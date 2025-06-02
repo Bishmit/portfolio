@@ -3,9 +3,23 @@ const projects = [
     {
       title: "Rigid Body Physics Simulation",
       description:
-        "Rigid Body Simulation made in SFML/C++ from scratch which detects collisions and resolve it.",
+        "Rigid Body Simulation made in OpenGL/C++ from scratch which detects collisions and resolve it. Works on all convex polygons.",
         image: "./projectss/rigidbody.png",
-      githubLink: "https://github.com/Bishmit/RigidBodyPhysicsEngine",
+      githubLink: "https://github.com/Bishmit/RigidBodysim-OpenGL",
+    },
+    {
+      title: "Simple Traffic Car Game",
+      description:
+        "Simple Car Game made in unity, in which player car dodge the other cars and increase the score.",
+      image: "./projectss/DrivingCarGame.png",
+      githubLink: "https://github.com/Bishmit/TrafficAvoidCarGame",
+    },
+    {
+      title: "Donkey Kong Clone",
+      description:
+        "Donkey Kong Clone made in unity to enhance the understanding of unity.",
+      image: "./projectss/Donkeykong.png",
+      githubLink: "https://github.com/Bishmit/DonkeyKong",
     },
     {
       title: "Custom Graph Traversal",
@@ -22,25 +36,25 @@ const projects = [
         githubLink: "https://github.com/Bishmit/PathFinding-Visualization-using-Astar-algorithm",
     },
     {
-      title: "Terminal like Portfolio",
+      title: "Plane Shooter",
       description:
-        "Simple Terminal based Portfolio made for linux user or CLI lover with many features of terminal.",
-      image: "./projectss/terminal.png",
-      githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
-    },
-    {
-      title: "Space Shooter",
-      description:
-        "This is a simple space shooter game that I made in C++/SFML library while dodging bullets and enemy.",
+      "This is a simple space shooter game that I made in C++/SFML library while dodging bullets and enemy.",
       image: "./projectss/plane.png",
       githubLink: "https://github.com/Bishmit/Plane",
     },
     {
       title: "Flappy Bird Clone",
       description:
-        "This is simple Flappy Bird clone that I made in C++ again with the SFML library.",
+      "This is simple Flappy Bird clone that I made in C++ with the SFML library.",
       image: "./projectss/flappybird.png",
       githubLink: "https://github.com/Bishmit/flappybird",
+    },
+    {
+      title: "Terminal like Portfolio",
+      description:
+        "Simple Terminal based Portfolio made for linux user or CLI lover with many features of terminal.",
+      image: "./projectss/terminal.png",
+      githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
     },
 
     // more projects if needed will go here 

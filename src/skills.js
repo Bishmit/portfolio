@@ -21,7 +21,7 @@ const skillsData = {
         { name: "SFML", level: 80, icon: "fas fa-gamepad" },
         { name: "Unity", level: 35, icon: "fab fa-unity" },
         { name: "Godot", level: 25, icon: "fas fa-dice" },
-        { name: "Blender", level: 35, icon: "fas fa-blender" }
+        { name: "Blender", level: 25, icon: "fas fa-blender" }
     ]
 };
 
