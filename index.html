@@ -1,141 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bishmit Regmi</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="./favicon.ico">
-    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
-
-
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Bishmit</h1>
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Project</a>
-            <a href="#Contact">Contact</a>
-        </nav>
+      <h1>Bishmit</h1>
+      <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a href="#Contact">Contact</a>
+      </nav>
     </header>
 
     <section class="home">
-        <img src="assets/mount2.png" class="mount2">
-        <img src="assets/mount1.png" class="mount1">
-        <img src="assets/bush2.png" class="bush2">
+      <img src="assets/mount2.png" class="mount2" />
+      <img src="assets/mount1.png" class="mount1" />
+      <img src="assets/bush2.png" class="bush2" />
 
-        <h1 class="title">Hello there!</h1>
+      <h1 class="title">Hello there!</h1>
 
-        <img src="assets/bush1.png" class="bush1">
-        <img src="assets/leaf2.png" class="leaf2">
-        <img src="assets/leaf1.png" class="leaf1">
+      <img src="assets/bush1.png" class="bush1" />
+      <img src="assets/leaf2.png" class="leaf2" />
+      <img src="assets/leaf1.png" class="leaf1" />
     </section>
 
     <section class="about" id="about">
-        <h1>About</h1>
-        <br>
-        <p>Hello, I’m Bishmit Regmi, a passionate C++ developer with a strong focus on low-level programming and system development.</p>
-        <br>
-        <p>I am currently pursuing my Bachelor's degree in Computer Science and Information Technology at Lumbini ICT Campus. My expertise lies in C++ programming, and I have a deep interest in game development, simulations, and artificial intelligence.</p>
-        <br>
-        <p>With hands-on experience in developing simulations and exploring advanced programming concepts, I am constantly looking for opportunities to apply my skills to challenging and innovative projects.</p>
-        <br>
-        <p>In my free time, I enjoy working on personal projects, competitive programming, and researching new technologies to enhance my problem-solving abilities.</p>
-        <br>
-        <a href="Resume/Resume.pdf" download="Resume" class="download-btn">Download CV
-            <i class="fa fa-download"></i>
-        </a>
+      <h1>About</h1>
+      <br/>
+      <p>
+        Hello, I'm <strong>Bishmit Regmi</strong> — a passionate
+        <strong>Unity and C++ developer</strong> with a deep fascination for
+        low-level programming, physics simulations, and system design.
+      </p>
+      <br />
+      <p>
+        Currently pursuing my Bachelor's degree in
+        <strong>Computer Science and Information Technology</strong> at
+        <strong>Lumbini ICT Campus</strong>, I love bridging the gap between
+        high-level creativity and low-level technical precision. From building
+        interactive simulations and physics engines in C++ to crafting clean,
+        efficient gameplay systems in Unity, I thrive on turning complex ideas
+        into working, optimized systems.
+      </p>
+      <br />
+      <p>
+        I enjoy experimenting with advanced programming concepts, exploring
+        artificial intelligence, and developing systems that combine
+        performance, logic, and creativity. In my free time, I dive into
+        personal projects, competitive programming, and research that sharpens
+        both my technical and problem-solving skills.
+      </p>
+      <br />
+      <a href="Resume/Resume.pdf" download="Resume" class="download-btn"
+        >Download CV
+        <i class="fa fa-download"></i>
+      </a>
     </section>
-    
+
     <div class="heading">
-        <h1>Skills</h1>
+      <h1>Skills</h1>
     </div>
 
     <section class="skills" id="skills">
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="openTab(event, 'languages')">Languages</button>
-            <button class="tab-btn" onclick="openTab(event, 'tools')">Tools</button>
-            <button class="tab-btn" onclick="openTab(event, 'frameworks')">Frameworks</button>
-            <button class="tab-btn" onclick="openTab(event, 'game-dev')">Game Dev</button>
-        </div>
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab-btn" onclick="openTab(event, 'languages')">
+          Languages
+        </button>
+        <button class="tab-btn" onclick="openTab(event, 'tools')">Tools</button>
+        <button class="tab-btn" onclick="openTab(event, 'frameworks')">
+          Frameworks
+        </button>
+        <button
+          class="tab-btn active"
+          onclick="openTab(event, 'GameDev')"
+        >
+          Game Dev
+        </button>
+      </div>
 
-        <!-- Tab Content -->
-        <div id="tab-content" class="tab-content active"></div>
-
+      <div id="tab-content"></div>
     </section>
-    
 
     <section id="projects">
       <div class="heading-project">
-        <h1>Projects</h1>
+        <h1>Personal Projects</h1>
       </div>
-      <div class="projects-grid">
-      </div>
+      <div class="projects-grid"></div>
       <div id="container">
-        <a href="https://github.com/Bishmit?tab=repositories" target="_blank" rel="noopener noreferrer" class="button-link">
-        <button class="learn-more">
-          <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-          </span>
-          <span class="button-text">View More</span>
-        </button>
-         </a>
+        <a
+          href="https://github.com/Bishmit?tab=repositories"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button-link"
+        >
+          <button class="learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text">View More</span>
+          </button>
+        </a>
       </div>
     </section>
-    
-   
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="vertical-line"></div>
+
+      <div class="exp-item">
+        <div class="exp-content">
+          <h3>
+            Junior Unity Developer<span style="color: #c38bff"
+              >Dark Matter Game Production</span
+            >
+          </h3>
+          <span>2025 (Oct – Present) | Kathmandu, Nepal | On-Site</span>
+          <p>
+            Currently working on an
+            <strong>open-world action-adventure game</strong> inspired by
+            GTA-style mechanics. Involved in building core systems including
+            <strong
+              >combat mechanics, vehicle physics, AI navigation, and dynamic
+              day–night cycles</strong
+            >.
+          </p>
+        </div>
+        <div class="exp-line"></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-content">
+          <h3>
+            Unity Developer Intern<span style="color: #c38bff"
+              >Dark Matter Game Production</span
+            >
+          </h3>
+          <span>2025 (Jul – Oct) | Kathmandu, Nepal | On-Site</span>
+          <p>
+            Contributed to the Japanese language learning app
+            <strong>Nobigo</strong>, built in Unity. Focused on implementing
+            clean architecture patterns, creating efficient scene transitions,
+            optimizing UI systems, and enhancing performance through different
+            custom algorithm and async loading.
+          </p>
+        </div>
+        <div class="exp-line"></div>
+      </div>
+    </section>
+
     <script src="src/script.js"></script>
     <script src="src/skills.js"></script>
     <script src="src/project.js"></script>
 
-      <section id ="Contact">
-        <div class="contact-img">
-            <img src="img/my_pic.jpg" alt="My Picture">
-        </div>
-        <div class="contact-form">
-            <h1>Contact <span>Me</span></h1>
-            <p>I am available for working on C++ projects, game/simulation development ideas. You can send your message directly from below to my gmail.</p>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="1c3545c2-07b5-4966-86b5-7fb2543e6bb4">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <input type="text" name="subject" placeholder="Write a Subject" required>
-                <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <input type="submit" value="Submit" class="btn">
-            </form>
-        </div>
+    <section id="Contact">
+      <div class="contact-img">
+        <img src="img/my_pic.jpg" alt="My Picture" />
+      </div>
+      <div class="contact-form">
+        <h1>Contact <span>Me</span></h1>
+        <p>
+          I am available for working on C++ projects, game/simulation
+          development ideas. You can send your message directly from below to my
+          gmail.
+        </p>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="1c3545c2-07b5-4966-86b5-7fb2543e6bb4"
+          />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Write a Subject"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Your Message"
+            required
+          ></textarea>
+          <input type="submit" value="Submit" class="btn" />
+        </form>
+      </div>
     </section>
-      <footer>
-        <div class="footerContainer">
-            <div class="socialIcons">
-                <a href="https://www.facebook.com/chris.regmi.7/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.instagram.com/bishmitregmi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://twitter.com/BishmitRegmi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/bishmit-regmi-20852b260/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://github.com/Bishmit" target="_blank"><i class="fa-brands fa-github"></i></a>
-            </div>
-            
-            <div class="footerNav">
-                <ul><li><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skill</a></li>
-                    <li><a href="#projects">Project</a></li>
-                    <li><a href="#Contact">Contact Us</a></li>
-                </ul>
-            </div>
-            
+    <footer>
+      <div class="footerContainer">
+        <div class="socialIcons">
+          <a href="https://www.facebook.com/chris.regmi.7/" target="_blank"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/bishmitregmi/" target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com/BishmitRegmi" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/bishmit-regmi-20852b260/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/Bishmit" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
-        <div class="footerBottom">
-            <p>Copyright &copy;2024 All right reserved </p>
+
+        <div class="footerNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#projects">Project</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
         </div>
+      </div>
+      <div class="footerBottom">
+        <p>Copyright &copy;2024 All right reserved</p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
-
