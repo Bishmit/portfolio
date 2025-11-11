@@ -20,14 +20,8 @@ const skillsData = {
     GameDev: [
         { name: "Unity", level: 65, icon: "fab fa-unity" },
         { name: "SFML", level: 80, icon: "fas fa-gamepad" },
-<<<<<<< Updated upstream
-        { name: "Unity", level: 35, icon: "fab fa-unity" },
-        { name: "Godot", level: 25, icon: "fas fa-dice" },
-        { name: "Blender", level: 25, icon: "fas fa-blender" }
-=======
         { name: "Blender", level: 35, icon: "fas fa-blender" },
         { name: "Godot", level: 25, icon: "fas fa-dice" }
->>>>>>> Stashed changes
     ]
 };
 
