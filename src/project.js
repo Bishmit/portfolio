@@ -56,7 +56,13 @@ const projects = [
       image: "./projectss/terminal.png",
       githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
     },
-
+    {
+      title: "Terminal like Portfolio",
+      description:
+        "Simple Terminal based Portfolio made for linux user or CLI lover with many features of terminal.",
+      image: "./projectss/terminal.png",
+      githubLink: "https://github.com/Bishmit/TerminalLikePortfolio",
+    }
     // more projects if needed will go here 
   ];
   
