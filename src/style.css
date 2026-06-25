@@ -64,46 +64,186 @@ header nav:hover > a:not(:hover) {
         padding: 10px 20px;
         font-size: 16px;
     }
-    .home .title {
-        font-size: 60px;
-    }
+    .home .title   { font-size: 60px; }
+    .home .subtitle { font-size: 1.1rem; letter-spacing: 3px; }
 }
 
+/* ── Hamburger button ──────────────────────────────────── */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 20px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 200;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+    transition: transform 0.35s ease, opacity 0.25s ease;
+    transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(8.5px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.hamburger.open span:nth-child(3) { transform: translateY(-8.5px) rotate(-45deg); }
+
+/* ── Drawer overlay ────────────────────────────────────── */
+.drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(3px);
+    z-index: 300;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+}
+.drawer-overlay.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ── Drawer panel ──────────────────────────────────────── */
+.drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 100%;
+    background: linear-gradient(160deg, #0d0d40 0%, #1a1260 50%, #2c1978 100%);
+    z-index: 400;
+    transform: translateX(100%);
+    transition: transform 0.38s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    padding: 72px 36px 40px;
+    box-shadow: -6px 0 40px rgba(0, 0, 0, 0.6);
+    border-left: 1px solid rgba(184, 117, 255, 0.15);
+}
+.drawer.open {
+    transform: translateX(0);
+}
+
+/* Close button (✕ made from two spans) */
+.drawer-close {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.drawer-close span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: rgba(220, 210, 255, 0.8);
+    border-radius: 2px;
+    transition: background 0.2s;
+}
+.drawer-close span:nth-child(1) { transform: translateY(-50%) rotate(45deg); }
+.drawer-close span:nth-child(2) { transform: translateY(-50%) rotate(-45deg); }
+.drawer-close:hover span { background: #c38bff; }
+
+/* Brand name inside drawer */
+.drawer-brand {
+    font-family: 'Sacramento', cursive;
+    font-size: 2.2rem;
+    color: rgba(220, 210, 255, 0.9);
+    margin-bottom: 40px;
+    text-shadow: 0 0 20px rgba(180, 120, 255, 0.5);
+}
+
+/* Drawer nav links */
+.drawer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.drawer-link {
+    color: rgba(200, 185, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    letter-spacing: 1px;
+    transition: color 0.2s ease, padding-left 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.drawer-link::before {
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #b875ff;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    flex-shrink: 0;
+    transform: scale(0.5);
+}
+.drawer-link:hover {
+    color: #d4aaff;
+    padding-left: 8px;
+}
+.drawer-link:hover::before {
+    opacity: 1;
+    transform: scale(1);
+}
+.drawer-link:last-child { border-bottom: none; }
+
+/* ── Mobile header tweaks ──────────────────────────────── */
 @media (max-width: 700px) {
     header {
-        flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         height: auto;
-        padding: 15px 3%;
+        padding: 16px 5%;
     }
     header h1 {
-        display: none; 
+        display: inline-block;
+        font-size: 28px;
     }
-    header nav {
-        flex-direction: row;
-        gap: 15px;
-        margin-top: 0;
-    }
-    header nav a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
+    header nav { display: none; }
+    .hamburger { display: flex; }
 }
 
 @media (max-width: 480px) {
-    header nav a {
-        padding: 6px 10px;
-        font-size: 12px;
-    }
+    header { padding: 14px 4%; }
+    header h1 { font-size: 24px; }
 }
 
 .home {
     display: flex;
     height: 100dvh;
-    background: linear-gradient(to top, #D2E2FB 30%, #86A8DB);
+    background: linear-gradient(to top, #0a0a2e 0%, #1a1a5e 40%, #2d4a8a 70%, #4a7ab5 100%);
     position: relative;
     overflow: hidden;
+}
+
+#particles-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
 }
 
 .home img {
@@ -111,16 +251,48 @@ header nav:hover > a:not(:hover) {
     bottom: 0;
     width: 100%;
     pointer-events: none;
+    z-index: 2;
 }
 
-.home .title {
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3;
+    animation: fadeInDown 1s ease both;
+    will-change: transform, opacity;
+    padding: 0 20px;
+    width: 100%;
+}
+
+.home .title {
     color: white;
     font-size: 80px;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 30px rgba(140, 180, 255, 0.8), 0 0 60px rgba(100, 150, 255, 0.4);
+    letter-spacing: 2px;
+}
+
+.home .subtitle {
+    color: rgba(210, 230, 255, 0.9);
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    text-shadow: 0 0 20px rgba(140, 180, 255, 0.6);
+    animation: fadeInUp 1.2s ease both;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to   { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
 }
 
 .about {
@@ -842,3 +1014,110 @@ button.learn-more:hover .button-text {
       opacity: 1;
       background: linear-gradient(to right, #d9aaff, rgba(217, 170, 255, 0));
     }
+
+    /* Current role badge */
+    .exp-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, #7c3aed, #4f46e5);
+      color: #fff;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 2px 8px;
+      border-radius: 20px;
+      margin-left: 10px;
+      vertical-align: middle;
+      box-shadow: 0 0 10px rgba(124, 58, 237, 0.7);
+      animation: pulseBadge 2s ease-in-out infinite;
+    }
+
+    @keyframes pulseBadge {
+      0%, 100% { box-shadow: 0 0 8px rgba(124, 58, 237, 0.6); }
+      50%       { box-shadow: 0 0 20px rgba(124, 58, 237, 1); }
+    }
+
+    /* Glow the first (current) experience item */
+    .exp-item:first-of-type .exp-content {
+      border-left: 3px solid rgba(184, 117, 255, 0.5);
+      padding-left: 12px;
+      border-radius: 4px;
+    }
+
+    /* Smooth section fade-in on scroll */
+    section.experience {
+      animation: sectionFadeIn 0.8s ease both;
+    }
+
+    @keyframes sectionFadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+/* ── Tablet (≤768px) ─────────────────────────────────── */
+@media (max-width: 768px) {
+    /* Hero text */
+    .home .title   { font-size: 48px; letter-spacing: 1px; }
+    .home .subtitle { font-size: 0.9rem; letter-spacing: 2px; }
+
+    /* About */
+    .about { padding: 30px 24px; }
+    .about h1 { font-size: 28px; }
+    .about p  { font-size: 1rem; }
+
+    /* Experience */
+    section.experience {
+        margin: 40px 16px;
+        padding: 28px 16px 28px 16px;
+    }
+    .experience h2 { font-size: 1.7rem; margin-bottom: 36px; }
+    .vertical-line { left: 18px; top: 80px; }
+    .exp-item {
+        margin-left: 44px;
+        margin-bottom: 28px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .exp-item::before { left: -28px; width: 14px; height: 14px; }
+    .exp-line { display: none; }
+    .exp-item h3   { font-size: 1.05rem; }
+    .exp-item span { font-size: 0.8rem; }
+    .exp-item p    { font-size: 0.88rem; }
+    .exp-item:first-of-type .exp-content { padding-left: 10px; }
+}
+
+/* ── Mobile (≤480px) ─────────────────────────────────── */
+@media (max-width: 480px) {
+    /* Hero text */
+    .home .title   { font-size: 34px; }
+    .home .subtitle { font-size: 0.72rem; letter-spacing: 1.5px; }
+
+    /* About */
+    .about { padding: 24px 16px; }
+    .about h1 { font-size: 24px; }
+    .about p  { font-size: 0.95rem; }
+
+    /* Experience */
+    section.experience {
+        margin: 24px 10px;
+        padding: 20px 12px 20px 12px;
+    }
+    .experience h2 { font-size: 1.4rem; margin-bottom: 28px; }
+    .vertical-line { left: 14px; top: 72px; }
+    .exp-item {
+        margin-left: 34px;
+        margin-bottom: 22px;
+    }
+    .exp-item::before { left: -22px; width: 12px; height: 12px; top: 6px; }
+    .exp-item h3   { font-size: 0.95rem; }
+    .exp-item span { font-size: 0.75rem; }
+    .exp-item p    { font-size: 0.83rem; }
+    .exp-badge { font-size: 0.58rem; padding: 2px 6px; margin-left: 6px; }
+
+    /* Skills */
+    .skills { padding: 14px; }
+
+    /* Projects */
+    .projects-grid { padding: 12px; gap: 12px; }
+    .project-img   { height: 140px; }
+}

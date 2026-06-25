@@ -32,14 +32,39 @@
         <a href="#projects">Project</a>
         <a href="#Contact">Contact</a>
       </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </header>
 
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <aside class="drawer" id="drawer" aria-hidden="true">
+      <button class="drawer-close" id="drawerClose" aria-label="Close menu">
+        <span></span>
+        <span></span>
+      </button>
+      <p class="drawer-brand">Bishmit</p>
+      <nav class="drawer-nav">
+        <a href="#" class="drawer-link">Home</a>
+        <a href="#about" class="drawer-link">About</a>
+        <a href="#skills" class="drawer-link">Skills</a>
+        <a href="#projects" class="drawer-link">Projects</a>
+        <a href="#Contact" class="drawer-link">Contact</a>
+      </nav>
+    </aside>
+
     <section class="home">
+      <canvas id="particles-canvas"></canvas>
       <img src="assets/mount2.png" class="mount2" />
       <img src="assets/mount1.png" class="mount1" />
       <img src="assets/bush2.png" class="bush2" />
 
-      <h1 class="title">Hello there!</h1>
+      <div class="hero-text">
+        <h1 class="title">Hello there!</h1>
+        <p class="subtitle">Systems Engineer &amp; Developer</p>
+      </div>
 
       <img src="assets/bush1.png" class="bush1" />
       <img src="assets/leaf2.png" class="leaf2" />
@@ -51,26 +76,25 @@
       <br/>
       <p>
         Hello, I'm <strong>Bishmit Regmi</strong> — a passionate
-        <strong>Unity and C++ developer</strong> with a deep fascination for
-        low-level programming, physics simulations, and system design.
+        <strong>Systems Engineer and C++ developer</strong> with a deep fascination for
+        low-level programming, infrastructure, and system design.
       </p>
       <br />
       <p>
-        Currently pursuing my Bachelor's degree in
-        <strong>Computer Science and Information Technology</strong> at
-        <strong>Lumbini ICT Campus</strong>, I love bridging the gap between
-        high-level creativity and low-level technical precision. From building
-        interactive simulations and physics engines in C++ to crafting clean,
-        efficient gameplay systems in Unity, I thrive on turning complex ideas
-        into working, optimized systems.
+        Currently working as a <strong>System Engineer at Guardware Australia</strong>,
+        I work on robust system-level solutions. Previously, I built gameplay systems
+        as a Unity developer — from open-world mechanics to optimized UI pipelines.
+        I graduated from Bachelor's degree in
+        <strong>Computer Science and Information Technology</strong> from
+        <strong>Lumbini ICT Campus</strong>.
       </p>
       <br />
       <p>
-        I enjoy experimenting with advanced programming concepts, exploring
-        artificial intelligence, and developing systems that combine
-        performance, logic, and creativity. In my free time, I dive into
-        personal projects, competitive programming, and research that sharpens
-        both my technical and problem-solving skills.
+        I thrive on bridging high-level creativity with low-level technical precision,
+        whether engineering reliable infrastructure, building physics, game simulations in C++,
+        or crafting interactive systems. In my free time, I dive into personal projects,
+        competitive programming, and research that sharpens both my technical and
+        problem-solving skills.
       </p>
       <br />
       <a href="Resume/Resume.pdf" download="Resume" class="download-btn"
@@ -133,15 +157,34 @@
       <div class="exp-item">
         <div class="exp-content">
           <h3>
+            System Engineer<span style="color: #c38bff"
+              > @ Guardware Australia</span
+            ><span class="exp-badge">Current</span>
+          </h3>
+          <span>2025 (Dec – Present) | Australia | On-Site</span>
+          <p>
+            Working as a <strong>System Engineer</strong> at Guardware Australia,
+            building low-level systems and networking solutions in
+            <strong>C++</strong>. Focused on
+            <strong>network programming, low-level system design, and
+            performance-critical C++ development</strong>.
+          </p>
+        </div>
+        <div class="exp-line"></div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-content">
+          <h3>
             Junior Unity Developer<span style="color: #c38bff"
-              >Dark Matter Game Production</span
+              > @ Dark Matter Game Production</span
             >
           </h3>
-          <span>2025 (Oct – Present) | Kathmandu, Nepal | On-Site</span>
+          <span>2025 (Oct – Dec) | Kathmandu, Nepal | On-Site</span>
           <p>
-            Currently working on an
+            Worked on an
             <strong>open-world action-adventure game</strong> inspired by
-            GTA-style mechanics. Involved in building core systems including
+            GTA-style mechanics. Built core systems including
             <strong
               >combat mechanics, vehicle physics, AI navigation, and dynamic
               day–night cycles</strong
@@ -155,7 +198,7 @@
         <div class="exp-content">
           <h3>
             Unity Developer Intern<span style="color: #c38bff"
-              >Dark Matter Game Production</span
+              > @ Dark Matter Game Production</span
             >
           </h3>
           <span>2025 (Jul – Oct) | Kathmandu, Nepal | On-Site</span>
@@ -163,8 +206,8 @@
             Contributed to the Japanese language learning app
             <strong>Nobigo</strong>, built in Unity. Focused on implementing
             clean architecture patterns, creating efficient scene transitions,
-            optimizing UI systems, and enhancing performance through different
-            custom algorithm and async loading.
+            optimizing UI systems, and enhancing performance through
+            custom algorithms and async loading.
           </p>
         </div>
         <div class="exp-line"></div>
